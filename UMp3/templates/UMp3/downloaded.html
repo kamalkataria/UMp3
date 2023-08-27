@@ -1,0 +1,25 @@
+{%extends 'UMp3/base.html'%}
+{%block content%}
+{% load static %}
+<div class="container-fluid">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4" style="margin-top:10em;">
+        <h1 class="text text-center text-warning">You tube to Mp3</h1>
+
+        <p class="text text-center text-success">Download YouTube Videos in Mp3 format</p>
+
+
+            <a href="{% get_media_prefix %}Downloads/{{fileobj.filepath}}">{% get_media_prefix %}Downloads/{{fileobj.filepath}}</a>
+            <p>{{MEDIA_ROOT}}JP</p>
+    </div>
+        <div class="col-sm-4"></div>
+
+    </div>
+
+</div>
+</div>
+
+
+{%endblock%}
